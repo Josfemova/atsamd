@@ -18,10 +18,11 @@ apa102-spi = "0.3"
 smart-leds = "0.3"
 
 [dependencies.cortex-m-rt]
-version = "0.6.12"
+version = "0.7"
 optional = true
 
 [dependencies.atsamd-hal]
+path="../../hal"
 version = "0.13"
 default-features = false
 
@@ -65,6 +66,9 @@ name = "blinky_basic"
 
 [[example]]
 name = "dotstar"
+
+[[example]]
+name = "spi"
 
 [[example]]
 name = "usb_serial"
